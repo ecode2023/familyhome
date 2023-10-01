@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title------------------------------------->
+    <title>family home</title>
+    <!------------------import file css---------------------------->
+    <link  rel="stylesheet" href="css/family home.css">
+    <!--               import file normalize                                     -->
+    <link  rel="stylesheet" href="css/bootstrap.min.css">
+    <!--               google font work sans                             -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,300;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!---fontawesome-------------------------->
+    <link    rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+     
+    <body>
+      <header class="navbar navbar-expand-lg fixed-top ">
+         <div class="container">
+           <a class="navbar-brand" href="indix.html"><img class="logo" src="img/loge.png" alt="logo" ></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <i class="fa-solid fa-bars"></i>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link" href="#Features">Features</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#portfolio.html">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about.html">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contect.html">About</a>
+               </li>
+           </div>
+         </div>
+       </header>
+   
+
+   <section class="landing" id="landing">
+     <div class="intro-text">
+        <h1>Hello there</h1>
+        <p>We are a real estate company characterized by excellent quality and designs</p>
+    </div>
+   </section>
+
+     <section class="features" id="Features">
+        <div class="container">
+           <div class="feat">
+              <i class="fa-solid fa-shield"></i>
+              <h3>achieve</h3>
+              <p>The company is distinguished by its rapid delivery of projects on time</p>
+           </div>
+           <div class="feat">
+              <i class="fa-brands fa-bitcoin"></i>
+              <h3>Excellent prices</h3>
+              <p>Distinguish the company at an excellent price</p>
+           </div>
+          <div class="feat">
+             <i class="far fa-check-circle"></i>
+             <h3>Quality</h3>
+             <p>The company's quality in the selection of materials is necessary to build its presence</p>
+          </div>
+         </div>
+     </section >
+
+     <section  class="portfolio" id="portfolio">
+      <div class="container">
+         <h2 class="special-heading">portfoilo</h2>
+         <div class="portfolio-content">
+            <div class="card">
+               <img src="img/img1.png" alt=""  >
+               <div class="info">
+                  <h3>project Here</h3>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/تصميم بدون عنوان (2).png" alt=""  >
+               <div class="info">
+                  <h3>project Here</h3>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/تصميم بدون عنوان (3).png" alt=""  >
+               <div class="info">
+                  <h3>project Here</h3>
+               </div>
+            </div>
+         </div>
+         <a href="portfolio.html" class="more">more</a>
+      </div>
+     </section>
+     <section class="about" id="about">
+      <div class="container">
+         <h2 class="special-heading">About</h2>
+         <div class="about-content">
+               <img src="img/img1.png" alt="">
+            <div class="text">
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus hic maiores quisquam esse iusto rerum temporibus sit cupiditate aut ad rem ducimus, corporis animi officiis sed cumque quasi at saepe.</p>
+               <hr>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga culpa voluptatibus omnis saepe beatae cumque sequi, explicabo eaque vitae. Veritatis ut doloremque impedit quam incidunt nesciunt laboriosam dolore harum excepturi?</p>
+            </div>
+         </div>
+      </div>
+   </section>
+      <section class="contact" id="contact">
+         <div class="container">
+            <h2 class="special-heading">contact</h2>
+            <div class="info">
+            <p class="label"> feel free to drop us a line at</p>
+               <a id="ahmed" href="mailto:" class="link"> mail</a>
+            <div class="social">
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="form">
+               <form action="" method="post" onsubmit="return validateForm()">
+                  
+                  <input id="name" type="text" name="name" value=""  placeholder="name" required><br>
+                  
+                  <input id="email" type="email" name="email" value="" placeholder="email" required><br>
+                  
+                  <input  id="phone"  type="text" name="phone" value="" placeholder="phone" required>
+                  
+                  <textarea  name="description"  placeholder="massage"></textarea><br>
+                  <input type="submit" value="send">
+               </form>
+              
+            </div>
+         </div>
+      </div>
+     </section>
+     <footer>
+         &copy;2022<span>family home</span>All Right Reserved
+     </footer>
+     <script src="javascript/bootstrap.bundle.min.js"></script>
+     <script src="css/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+:root{
+    --main-color:rgb(110, 182, 182);
+
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:"work sans","sans-serif";
+}
+
+
+
+.container{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+@media(min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container{
+        width: 970px;
+        }
+}
+
+@media(min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+.special-heading{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  
+  .special-heading + p{
+  margin: -30px 0 0 ;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+  }
+
+
+.navbar{
+    padding:  0px  20px;
+    background-color: var(--main-color);
+    position: fixed;
+}
+
+.navbar .container .navbar-brand  img{
+    width: 55px;
+}
+
+.navbar .nav-link{ 
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+header .nav-link:hover{
+    color: rgb(229, 234, 235);
+
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    box-shadow:0 0 10px white;
+    transition:  0.7s ease;
+    border: 2px solid white;
+  }
+  
+  .navbar-toggler:hover,
+  .navbar-toggler[aria-expanded="true"]{
+    color: white;
+    border-color: white;
+    border: 2px solid white;
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+  }
+.landing{
+    background-image: url(../img/main\ tempelat\ one\ \(2\).png);
+    background-size: cover;
+    height: calc(100vh - 64px);
+}
+
+.landing .intro-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%) ;
+    width: 460px;
+    max-width: 100%;
+}
+.landing .intro-text h1{
+    margin: 0px;
+    font-weight: bold ;
+    font-size: 50px;
+    color:var(--main-color)
+}
+.landing .intro-text p{
+    font-size: 19px;
+    line-height: 1.8;
+    color: wheat;
+}
+
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6 ;
+}
+
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    grid-gap: 20px;
+}
+
+.features .feat{
+    padding: 20px;
+    text-align: center;
+    color: var(--main-color);
+}
+.features .feat i{
+    font-size: 60px;
+}
+
+.features .feat h3{
+    font-weight: 800;
+    margin:30px ,0px ;
+}
+
+.features .feat p{
+    line-height: 1.6;
+    color: rgb(74, 151, 155);
+    font-size: 17px;
+}
+
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+  .card{
+    padding: 20px;
+    text-align: center;
+    color: var(--main-color);
+  }
+  
+   .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+  
+  .portfolio .portfolio-content{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  } 
+
+   .portfolio .portfolio-content .card{
+    align-items: center;
+    background-color: rgb(240, 236, 236);
+    width: 300px;
+    margin: 20px;
+    justify-content: center;
+    transition: 0.7s ease; 
+   }
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.portfolio .portfolio-content .card img{
+    width: 100%;
+}
+
+.portfolio  .more {
+    text-decoration: none;
+    background-color: rgb(240, 236, 236);;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color:rgb(74, 151, 155);
+    border-radius: 10px;
+    margin: 45%;
+    box-shadow: 1px 0 5px silver;
+}
+
+.more:hover{
+    transform: scale(1.1);
+}
+
+  .about{
+    padding-top: 60px;
+    padding-bottom: 120px;
+    background-color: #f6f6f6 ;
+  }
+
+   .about-content{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+
+  .about .about-content img{
+    display: flex;
+    position: relative; 
+    width: 400px;
+    height: 375px;
+    border: 2px  solid #928888;
+  }
+
+ 
+
+.about  .about-content .text {
+    flex: 1;
+   padding: 30px;
+}
+
+.about  .about-content .text p:first-of-type{
+    font-weight:bold ;
+    line-height: 2;
+    margin-bottom: 50px;
+
+}
+
+.about  .about-content .text hr{
+    width: 50%;
+    display: inline-block;
+    border-color: aqua;
+}
+
+.about  .about-content .text p:last-of-type{
+    line-height: 2;
+    color:#777 ;
+}
+
+.contact{
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+.contact .info{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.contact .info .label{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+.info .link {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: #a7a9aa;
+    text-decoration: none;
+}
+
+.contact .info .social{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact .info .social i{
+    margin-left: 10px;
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.contact .form{
+    margin-top: 60px;
+    padding: 20px;
+    background-color: var(--main-color);
+}
+
+.contact .form input[type=text]
+,input[type=email]
+{
+    width: 80%;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    background-color: transparent;
+}
+
+.contact .form input[type=text]::placeholder
+,input[type=email]::placeholder {
+    color: aliceblue;
+
+}
+.contact .form textarea{
+    width: 80%;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    background-color: transparent;
+}
+
+.contact .form textarea::placeholder{
+    color: aliceblue;
+}
+
+.contact .form input[type=submit]{
+    width: 50%;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    background-color: aqua;
+    padding: 10px;
+    border:  none;
+}
+footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 30px 10px ;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer span {
+    font-size: bold;
+    color: #eceaea;
+}
+
+

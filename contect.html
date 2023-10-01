@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title------------------------------------->
+    <title>family home</title>
+    <!------------------import file css---------------------------->
+    <link  rel="stylesheet" href="css/family home.css">
+    <!--               import file normalize                                     -->
+    <link  rel="stylesheet" href="css/normalize.css">
+    <!--               google font work sans                             -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,300;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!---fontawesome-------------------------->
+    <link    rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+     
+    <body>
+    <header>
+    <div class="container">
+       <a href="index.html"><img class="loge" src="img/loge.png" alt=""></a> 
+        <nav>
+            <ul>
+               <li><a href="index.html" >Home</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contect.html">Contact</a></li>
+             </ul>
+            </nav>
+    </div>
+    </header>
+    <section class="contact" id="contact">
+      <div class="container">
+         <h2 class="special-heading">contact</h2>
+         <div class="info">
+            <p class="label"> feel free to drop us a line at</p>
+            <a href="mailto:" class="link"> mail</a>
+            <div class="social">
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="form">
+               <form action="" method="post" onsubmit="return validateForm()">
+                  
+                  <input id="name" type="text" name="name" value=""  placeholder="name" required><br>
+                  
+                  <input id="email" type="email" name="email" value="" placeholder="email" required><br>
+                  
+                  <input  id="phone"  type="text" name="phone" value="" placeholder="phone" required>
+                  
+                  <textarea  name="description"  placeholder="massage"></textarea><br>
+                  <input type="submit" value="send">
+               </form>
+               <script src="css/javascript/script.js"></script>
+            </div>
+         </div>
+      </div>
+     </section>
+     <footer>
+         &copy;2022<span>family home</span>All Right Reserved
+     </footer>
+    </body>
+</head>
